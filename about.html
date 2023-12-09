@@ -30,7 +30,7 @@
   <body>
     <!-- start of header -->
     <header class="fixed top-0 z-[9000] w-full header [&.invisible]:-translate-y-full">
-      <div class="container">6
+      <div class="container">
         <div class="flex justify-between py-6 items-center relative">
           <!-- logo -->
           <div class="hideOnScroll lg:[&.scrolled]:opacity-0 lg:[&.scrolled]:-translate-x-8 w-1/4 transition-all duration-300">
@@ -347,98 +347,55 @@
         </div>
       </section>
       <!-- ================= end of services ================= -->
-      
-      <!-- ================= start of testimonials ================= -->
-      <section class="py-28 bg-white text-dark rounded-b-2xl" data-aos="fade-in">
-        <div class="container">
-          <div class="row mb-16 items-end">
-            <div class="col-12 text-center">
-              <!-- Section Subtitle -->
-              <span class="font-secondary block text-2xl leading-none text-black/75 mb-4">Reviews</span>
-              <!-- Section Title -->
-              <h2 class="text-4xl lg:text-5xl font-secondary font-medium -mt-[6px]">What Clients Say</h2>
-            </div>
-          </div>
-          <div class="row justify-center">
-            <div class="lg:col-8">
-              <div class="relative md:px-20 text-center">
-                <!-- Swiper Container -->
-                <div class="swiper">
-                  <!-- Swiper Wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                      <div class="text-center">
-                        <!-- Slide Content -->
-                        <div class="text-lg mb-4 bg-light/10 py-8 px-5 md:px-10">The Next.js theme is simply amazing! It provides a clean and modern design that perfectly fits my projects. The code is well-structured and easy to customize. I highly recommend it.</div>
-                        <!-- Testimonial Author -->
-                        <p class="text-2xl font-medium mb-1">Harry Thompson</p>
-                        <!-- Testimonial Author's Role -->
-                        <p class="text-black/75">Web Developer</p>
-                      </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                      <div class="text-center">
-                        <!-- Slide Content -->
-                        <div class="text-lg mb-4 bg-light/10 py-8 px-5 md:px-10">As a UX designer, I appreciate the attention to detail in the Next.js theme. It offers a seamless user experience with its smooth animations and intuitive layout. It has definitely elevated the overall look and feel of my websites.</div>
-                        <!-- Testimonial Author -->
-                        <p class="text-2xl font-medium mb-1">George Harrison</p>
-                        <!-- Testimonial Author's Role -->
-                        <p class="text-black/75">UX Designer</p>
-                      </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                      <div class="text-center">
-                        <!-- Slide Content -->
-                        <div class="text-lg mb-4 bg-light/10 py-8 px-5 md:px-10">I&#x27;ve used many Next.js themes before, but it stands out from the rest. It has a solid foundation, responsive design, and excellent performance. It saved me a lot of development time and allowed me to deliver high-quality websites to my clients.</div>
-                        <!-- Testimonial Author -->
-                        <p class="text-2xl font-medium mb-1">Michael Johnson</p>
-                        <!-- Testimonial Author's Role -->
-                        <p class="text-black/75">Frontend Developer</p>
-                      </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                      <div class="text-center">
-                        <!-- Slide Content -->
-                        <div class="text-lg mb-4 bg-light/10 py-8 px-5 md:px-10">It has been a game-changer for my marketing projects. Its SEO-friendly structure, fast loading times, and well-organized code have improved the overall performance of my websites. It&#x27;s a reliable choice for anyone looking to boost their online presence.</div>
-                        <!-- Testimonial Author -->
-                        <p class="text-2xl font-medium mb-1">Emily Brown</p>
-                        <!-- Testimonial Author's Role -->
-                        <p class="text-black/75">Digital Marketer</p>
-                      </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                      <div class="text-center">
-                        <!-- Slide Content -->
-                        <div class="text-lg mb-4 bg-light/10 py-8 px-5 md:px-10">I&#x27;m impressed with the Next.js theme&#x27;s versatility. It caters to a wide range of projects, from simple portfolios to complex web applications. The extensive documentation and helpful support team make it even better. It is my go-to choice for Next.js development.</div>
-                        <!-- Testimonial Author -->
-                        <p class="text-2xl font-medium mb-1">David Wilson</p>
-                        <!-- Testimonial Author's Role -->
-                        <p class="text-black/75">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide Prev Button -->
-                <button class="slide-prev md:absolute px-3 md:px-0 mt-14 md:mt-0 left-0 top-1/2 -translate-y-1/2" title="Slide Prev">
-                  <img alt="arrow-right" loading="lazy" width="39" height="31" class="inline-block invert rotate-180" src="images/arrow-right.svg" />
-                </button>
-                <!-- Slide Next Button -->
-                <button class="slide-next md:absolute px-3 md:px-0 mt-14 md:mt-0 right-0 top-1/2 -translate-y-1/2" title="Slide Next">
-                  <img alt="arrow-right" loading="lazy" width="39" height="31" class="inline-block invert" src="images/arrow-right.svg" />
-                </button>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      <!-- ================= end of testimonials ================= -->
+      <style>
 
+
+.count-body {
+  /* background-color: #8e44ad; */
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  .count-body {
+    flex-direction: column;
+  }
+}
+
+      </style>
+      <div class="count-body">
+        <div class="counter-container">
+              <div class="counter" data-target="12000"></div>
+              <span>Instagram Followers</span>
+            </div>
+            <div class="counter-container">
+              <div class="counter" data-target="5000"></div>
+              <span>YouTube Subscribers</span>
+            </div>
+            <div class="counter-container">
+              <div class="counter" data-target="7500"></div>
+              <span>Facebook Fans</span>
+            </div>
+          </div>
     </main>
     <!-- end of main -->
 
@@ -586,6 +543,24 @@
     </footer>
     <!-- ================= end of footer ================= -->
 
+  <script>
+    const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
+
+  </script>
     <!-- start of script -->
     <script src="plugins/aos/aos.js"></script>
     <script src="scripts/main.js"></script>
