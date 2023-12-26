@@ -4,3 +4,19 @@
 .gallery-line-1{
     margin-top: 40px;
 }
+.banner-subtitle{
+    text-align: justify !important;
+}
+.footer-img{
+    height: 250px !important;
+    width: 250px !important;
+}
+.m-bt{
+    margin-bottom: -0.5rem;
+}
+.pt-1{
+    padding-top: 1rem !important;
+}
+.pb-13 {
+    padding-bottom: 3rem;
+}
